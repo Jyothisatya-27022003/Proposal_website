@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For My Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="bgMusic" src="music.mp3"></audio>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- Envelope Page -->
+    <section id="envelopePage">
+
+        <h1>A Special Message For You ❤️</h1>
+
+        <div class="envelope" onclick="openEnvelope()">
+
+            <div class="top"></div>
+
+            <div class="letter">
+                Click to Open 💌
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Love Message -->
+    <section id="messagePage">
+
+        <h1 id="typingText"></h1>
+
+        <button onclick="nextSection()">Continue ❤️</button>
+
+    </section>
+
+
+    <!-- Love Story -->
+    <section id="storyPage">
+
+        <h1>Our Beautiful Story</h1>
+
+        <div class="timeline">
+
+            <div class="event">
+                <h3>First Meeting</h3>
+                <p>The day my life changed forever ❤️</p>
+            </div>
+
+            <div class="event">
+                <h3>First Chat</h3>
+                <p>Every message made me smile</p>
+            </div>
+
+            <div class="event">
+                <h3>Special Moments</h3>
+                <p>Memories I will cherish forever</p>
+            </div>
+
+        </div>
+
+        <button onclick="openGallery()">See Our Memories 📸</button>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section id="galleryPage">
+
+        <h1>Our Memories</h1>
+
+        <div class="gallery">
+
+            <img src="images/photo1.jpg">
+            <img src="images/photo2.jpg">
+            <img src="images/photo3.jpg">
+
+        </div>
+
+        <button onclick="openProposal()">One More Thing 💖</button>
+
+    </section>
+
+
+    <!-- Proposal -->
+    <section id="proposalPage">
+
+        <h1>Will You Be Mine Forever? 💍</h1>
+
+        <div class="buttons">
+
+            <button class="yes" onclick="sayYes()">YES ❤️</button>
+            <button class="no" id="noBtn">NO 😢</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Celebration -->
+    <section id="celebration">
+
+        <h1>🎉 You Made Me The Happiest Person Alive ❤️</h1>
+
+        <img src="hug.gif" class="hug-gif">
+
+        <h2>My Heart Found Its Home In You ❤️</h2>
+        <p>Together Forever, No Matter What 💖</p>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
